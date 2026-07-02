@@ -16,26 +16,32 @@ namespace PlaneApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        
 
         public MainWindow()
         {
             InitializeComponent();
         }
 
-        private void btnAddObject_Click(object sender, RoutedEventArgs e)
+        private void BtnSetCount_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btnSort_Click(object sender, RoutedEventArgs e)
+        private void BtnSort_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        private void btnSaveFile_Click(object sender, RoutedEventArgs e)
+        private void BtnSave_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void BtnEnterData_Click(object sender, RoutedEventArgs e)
+        {
+            
         }
     }
 }
+
+
