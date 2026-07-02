@@ -1,0 +1,26 @@
+﻿<Window x:Class="PlaneApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PlaneApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Margin="26,72,0,0" TextWrapping="Wrap" Text="Введите модель самолета:" VerticalAlignment="Top"/>
+        <TextBox x:Name="model" HorizontalAlignment="Left" Margin="26,93,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,118,0,0" TextWrapping="Wrap" Text="Введите максимальную дальность полета:" VerticalAlignment="Top"/>
+        <TextBox x:Name="maxFlyDistance" HorizontalAlignment="Left" Margin="26,139,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-64,298,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,167,0,0" TextWrapping="Wrap" Text="Введите крейсерскую скорость:" VerticalAlignment="Top" RenderTransformOrigin="0.505,0.403"/>
+        <TextBox x:Name="speed" HorizontalAlignment="Left" Margin="26,188,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnAddObject" Content="Добавить объект" HorizontalAlignment="Left" Margin="26,218,0,0" VerticalAlignment="Top" Click="AddObject_Click"/>
+        <ListBox x:Name="lstUnsorted" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="540,17,59,226"/>
+        <ListBox x:Name="lstSorted" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="540,220,59,36"/>
+        <Button x:Name="btnSort" Content="Отсортировать" HorizontalAlignment="Left" Margin="171,218,0,0" VerticalAlignment="Top" Click="btnSort_Click"/>
+        <Button x:Name="btnSaveFile" Content="Сохранить в файл" HorizontalAlignment="Left" Margin="171,261,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.795,2.187" Click="btnSaveFile_Click"/>
+        <TextBox x:Name="Count" HorizontalAlignment="Left" Margin="26,49,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="26,33,0,0" TextWrapping="Wrap" Text="Введите кол-во объектов:" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
