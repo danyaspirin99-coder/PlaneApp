@@ -54,7 +54,6 @@ public class PlaneControl
 
     public void SaveToFile(string filePath)
     {
-       // string json = JsonConvert.SerializeObject(_planes, Formatting.Indented);
-        //File.WriteAllText(filePath, json);
+        File.WriteAllText(filePath, GetPlanes().ToString());
     }
 }
